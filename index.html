@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travis Farmer — Cybersecurity Analyst</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Travis Farmer</a>
+      <ul class="nav-links">
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="home">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Portfolio</p>
+        <h1>Cybersecurity<br>Enthusiast</h1>
+        <p class="roles">Networking Fundamentals &nbsp;·&nbsp; Threat Analysis &nbsp;·&nbsp; Problem Solving</p>
+        <p class="name-tag">Travis Farmer</p>
+      </div>
+      <div class="hero-photo">
+        <div class="hero-photo-wrap">
+          <img src="portfolio%20content/travis_farmer_headshot.jpeg" alt="Travis Farmer — Cybersecurity Analyst">
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── DARK QUOTE BAND ── -->
+  <section id="quote-band">
+    <div class="quote-inner">
+      <p>"Driven to understand how systems work and how they can be secured, while continuously evolving."</p>
+      <a href="about.html" class="btn-outline">Learn more</a>
+    </div>
+  </section>
+
+  <!-- ── SPLIT ── -->
+  <section id="split">
+    <div class="split-photo">
+      <img src="portfolio%20content/travis_farmer_headshot.jpeg" alt="Travis Farmer">
+      <div class="color-layer"></div>
+    </div>
+    <div class="split-text">
+      <p>Learning to<br>protect what matters.</p>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p>© 2026 Travis Farmer &nbsp;·&nbsp; Cybersecurity Enthusiast</p>
+  </footer>
+
+  <script>
+    // Subtle nav shadow on scroll
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.style.boxShadow = window.scrollY > 10
+        ? '0 2px 20px rgba(17,16,16,0.08)'
+        : 'none';
+    }, { passive: true });
+  </script>
+
+</body>
+</html>

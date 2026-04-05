@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Travis Farmer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Travis Farmer</a>
+      <ul class="nav-links">
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html" class="active">Contact Me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="contact-inner" style="padding-top: 64px;">
+      <h2>Contact Me</h2>
+      <p class="sub">Whether it's an opportunity, project, or just a conversation, feel free to reach out and connect. Use the form below to get in touch.</p>
+
+      <form class="form-grid" action="https://formspree.io/f/xzdkvzrk" method="POST">
+        <input type="hidden" name="_subject" value="New message from your portfolio">
+        <div class="form-row">
+          <div class="field">
+            <label>First Name <span>(required)</span></label>
+            <input type="text" name="firstName" required placeholder="">
+          </div>
+          <div class="field">
+            <label>Last Name <span>(required)</span></label>
+            <input type="text" name="lastName" required placeholder="">
+          </div>
+        </div>
+        <div class="field">
+          <label>Email <span>(required)</span></label>
+          <input type="email" name="email" required placeholder="">
+        </div>
+        <div class="field">
+          <label>Subject <span>(required)</span></label>
+          <input type="text" name="subject" required placeholder="">
+        </div>
+        <div class="field">
+          <label>Message <span>(required)</span></label>
+          <textarea name="message" required></textarea>
+        </div>
+        <div>
+          <button type="submit" class="btn-submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p>© 2026 Travis Farmer &nbsp;·&nbsp; Cybersecurity Enthusiast</p>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.style.boxShadow = window.scrollY > 10
+        ? '0 2px 20px rgba(17,16,16,0.08)'
+        : 'none';
+    }, { passive: true });
+
+  </script>
+
+</body>
+</html>
