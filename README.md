@@ -1,4 +1,4 @@
-# TFarmer Portfolio
+# Travis Farmer Portfolio
 
 This repository holds my personal portfolio website, built to showcase who I am, the work I do, and the journey that got me here.
 
