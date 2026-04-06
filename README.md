@@ -28,7 +28,4 @@ The site is built using plain HTML and CSS, with content organized across a few 
 
 This portfolio is not just a collection of work; it is a record of growth. It reflects where I started, what I have learned, and where I am headed next.
 
-## Notes
 
-- The project is ready to publish on GitHub Pages.
-- It is intended to be easy to update as my story evolves.
